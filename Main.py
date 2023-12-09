@@ -8,7 +8,7 @@ import time
 import geocoder
 ######
 
-account_sid = 'Acc SID as str'
+account_sid = 'Account sid as str'
 auth_token = 'Auth Token as str'
 client = Client(account_sid, auth_token)
 
@@ -19,9 +19,9 @@ def send_sms(): # function to send sms using api
     sms = f'Distress signal recieved by resident from {coors}'
     
     message = client.messages.create(
-        from_='+17209612901',
+        from_='Your twilio number',
         body=f'{sms}',
-        to='+91 79077 94521'
+        to='Number of closest contact'
     )
     print(f'Sms code: {message.sid}')
     print('Help request sent...')
