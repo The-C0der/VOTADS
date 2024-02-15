@@ -5,4 +5,5 @@ The code attached is the very first alpha version.
 
 - Will be released as apk in Beta version.
 - This is just a framework made in python.
+- Sry for bad quality, this version is a school project.
 
